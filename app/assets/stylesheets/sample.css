@@ -1,0 +1,41 @@
+h1 {
+  color: blue;
+  margin-bottom: 30px;
+}
+
+body {
+  padding: 20px;
+}
+
+.panel.panel-blue {
+  box-shadow: 5px 5px 17px #cccccc;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+p.txt {
+  text-align: center;
+}
+
+p.btn {
+  text-align: center;
+  display: block;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+button,
+input {
+  overflow: visible;
+  width: 65%;
+}
+
+input[type="submit"] {
+  width: 150px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+span {
+  padding-left: 20px;
+}

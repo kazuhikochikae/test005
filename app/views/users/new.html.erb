@@ -1,0 +1,49 @@
+<h1>Sign up</h1>
+
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(@user.errors.count, "error") %> prohibited this <%= @user.name %> from being saved:</h2>
+    <ul>
+    <% @user.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+
+
+
+ <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="panel panel-blue">
+
+<%= form_with(model: @user, local: true) do |f| %>
+  <p class="txt">
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+  </p>
+  <p class="txt">
+  <%= f.label :email %><br>
+  <%= f.email_field :email %>
+  </p>
+  <p class="txt">
+  <%= f.label :password %><br>
+  <%= f.password_field :password %>
+  </p>
+  <p class="txt">
+  <%= f.label :password_confirmation %><br>
+  <%= f.password_field :password_confirmation %>
+  </p>
+  <p class="btn">
+  <%= f.submit "登録！" %>
+  </p>
+<% end %>
+          </div>
+        </div>
+      
+      
+      </div>
+    </div>
+
